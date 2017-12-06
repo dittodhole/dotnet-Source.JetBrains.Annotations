@@ -1,4 +1,4 @@
-![Icon](https://resharper-plugins.jetbrains.com/Content/Images/packageReSharper.png)
+![](https://resharper-plugins.jetbrains.com/Content/Images/packageReSharper.png)
 
 # dotnet-Source.JetBrains.Annotations
 > ReSharper Annotations help reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantics of APIs in ASP.NET and XAML frameworks and otherwise increase accuracy of ReSharper code inspections.
