@@ -20,6 +20,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="content\JetBrains.Annotations.cs" target="content\App_Packages\JetBrains.Annotations.Source_$version$\" />
+    <file src="content\JetBrains.Annotations.cs" target="content\App_Packages\$id$_$version$\" />
   </files>
 </package>
