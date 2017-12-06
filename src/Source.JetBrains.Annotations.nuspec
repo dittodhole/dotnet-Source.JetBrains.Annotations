@@ -8,7 +8,7 @@
     <owners>Andreas Niedermair (@dittodhole)</owners>
     <developmentDependency>true</developmentDependency>
     <licenseUrl>https://raw.githubusercontent.com/dittodhole/WTFNMFPLv3/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/dittodhole/dotnet-JetBrains.Annotations.Source</projectUrl>
+    <projectUrl>https://github.com/dittodhole/dotnet-Source.JetBrains.Annotations</projectUrl>
     <iconUrl>http://resharper-plugins.jetbrains.com/Content/Images/packageReSharper.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>jetbrains resharper annotations canbenull notnull source</tags>
