@@ -31,7 +31,7 @@ PM> Install-Package -Id Source.JetBrains.Annotations
 
 ```cmd
 > git clone https://github.com/dittodhole/dotnet-Source.JetBrains.Annotations.git
-> cd dotnet-Source.JetBrains.Annotations/
+> cd dotnet-Source.JetBrains.Annotations
 dotnet-Source.JetBrains.Annotations> cd build
 dotnet-Source.JetBrains.Annotations/build> build.bat
 ```
