@@ -1,0 +1,20 @@
+*               text=auto !eol
+
+# Git Files
+.gitattributes  text eol=lf
+.gitignore      text eol=lf
+.gitconfig      text eol=lf
+
+# other Files
+appveyor.yml    text eol=lf
+gitversion      text eol=lf
+
+# text
+*               text eol=crlf
+
+# binary
+*.png           binary
+*.ico           binary
+*.pdf           binary
+*.xps           binary
+*.doc           binary
