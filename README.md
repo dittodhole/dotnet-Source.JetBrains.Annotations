@@ -5,20 +5,22 @@
 
 This package provides the actual source of [JetBrains.Annotations](https://www.nuget.org/packages/JetBrains.Annotations), as mentiond in https://blog.jetbrains.com/dotnet/2015/08/12/how-to-use-jetbrains-annotations-to-improve-resharper-inspections/ (*Including the source*).
 
+## Build status
+
+[![](https://img.shields.io/appveyor/ci/dittodhole/dotnet-source-jetbrains-annotations.svg)](https://ci.appveyor.com/project/dittodhole/dotnet-source-jetbrains-annotations)
+
 ## Installing
 
-### [myget.org]
+### myget.org
 
-[![](https://img.shields.io/appveyor/ci/dittodhole/dotnet-source-jetbrains-annotations/develop.svg)](https://ci.appveyor.com/project/dittodhole/dotnet-source-jetbrains-annotations/branch/develop)
 [![](https://img.shields.io/myget/dittodhole/vpre/Source.JetBrains.Annotations.svg)](https://www.myget.org/feed/dittodhole/package/nuget/Source.JetBrains.Annotations)
 
 ```powershell
 PM> Install-Package -Id Source.JetBrains.Annotations -pre --source https://www.myget.org/F/dittodhole/api/v2
 ```
 
-### [nuget.org]
+### nuget.org
 
-[![](https://img.shields.io/appveyor/ci/dittodhole/dotnet-source-jetbrains-annotations/master.svg)](https://ci.appveyor.com/project/dittodhole/dotnet-source-jetbrains-annotations/branch/master)
 [![](https://img.shields.io/nuget/v/Source.JetBrains.Annotations.svg)](https://www.nuget.org/packages/Source.JetBrains.Annotations)
 
 ```powershell
