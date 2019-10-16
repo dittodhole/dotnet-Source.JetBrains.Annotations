@@ -1,11 +1,15 @@
-version: '{build}-{branch}'
-image: Visual Studio 2015
-environment:
-  root_dir: '%APPVEYOR_BUILD_FOLDER%\'
-  source_dir: '%root_dir%src\'
-  project_name: 'Source.JetBrains.Annotations'
-  nuspec_file: '%source_dir%%project_name%.nuspec'
-  version_file: '%source_dir%gitversion.out'
+version: '{build}'
+image: Visual Studio 2019
+skip_tags: true
+before_build:
+- cmd: cd build
+build_script:
+- cmd: build.bat
+artifacts:  
+- path: artifacts/*.nupkg
+  name: nupkg
+  type: File
+/*
 install:
 - cmd: choco install %root_dir%packages.config -y
 before_build:
@@ -14,23 +18,19 @@ before_build:
 build_script: nuget pack "%nuspec_file%" -properties "Version=%version%;id=%project_name%"
 after_build:
 - cmd: appveyor PushArtifact "%root_dir%\%project_name%.%version%.nupkg"
+*/
 deploy:
+- provider: NuGet
+  name: NuGet
+  api_key:
+    secure: U6199dIr+h5NLeO9aWtxR2ihfMjDX3rrhqjdN3ByzlLzU9t3T00+MtjNQPkfrToY
+  artifact: nupkg
+  on:
+    branch: master
 - provider: NuGet
   name: MyGet
   server: https://www.myget.org/F/dittodhole/api/v2/package
   api_key:
     secure: c9r6oyxFOqnfj0xezZcLIoopgoBUb5ib9nrTYMkXDTqzvMrrXmprbHgyldag6NZ4
-  on:
-    branch: develop
-- provider: NuGet
-  name: NuGet
-  api_key:
-    secure: U6199dIr+h5NLeO9aWtxR2ihfMjDX3rrhqjdN3ByzlLzU9t3T00+MtjNQPkfrToY
-  on:
-    branch: master
-- provider: NuGet
-  name: NuGet (pre release)
-  api_key:
-    secure: U6199dIr+h5NLeO9aWtxR2ihfMjDX3rrhqjdN3ByzlLzU9t3T00+MtjNQPkfrToY
-  on:
-    branch: /release\/.*/
+  artifact: nupkg
+  symbol_server: https://www.myget.org/F/dittodhole/symbols/api/v2/package

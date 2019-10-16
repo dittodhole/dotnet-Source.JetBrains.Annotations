@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net40;net46;netstandard2.0</TargetFrameworks>
+    <NoWarn>1701;1702;NU5128</NoWarn>
+    <NoBuild>true</NoBuild>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>C# source implementation of JetBrains.Annotations</Description>
+    <Authors>JetBrains</Authors>
+    <Company>dittodhole</Company>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/dittodhole/WTFNMFPLv3/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/dittodhole/dotnet-Source.JetBrains.Annotations</PackageProjectUrl>
+    <PackageIconUrl>https://resources.jetbrains.com/storage/products/resharper/img/meta/ReSharper_64.png</PackageIconUrl>
+    <PackageTags>jetbrains resharper annotations canbenull notnull source</PackageTags>
+    <PackageType>Dependency</PackageType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="JetBrains.Annotations.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JetBrains.Annotations.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GitVersionTask" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
