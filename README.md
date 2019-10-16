@@ -1,4 +1,4 @@
-![](https://resources.jetbrains.com/storage/products/resharper/img/meta/ReSharper_64.png)
+![](assets/ReSharper_64.png)
 
 # dotnet-Source.JetBrains.Annotations
 > ReSharper Annotations help reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantics of APIs in ASP.NET and XAML frameworks and otherwise increase accuracy of ReSharper code inspections.
@@ -7,19 +7,19 @@ This package provides the actual source of [JetBrains.Annotations](https://www.n
 
 ## Installing
 
-### [myget.org][1]
+### [myget.org]
 
-[![](https://img.shields.io/appveyor/ci/dittodhole/dotnet-source-jetbrains-annotations/develop.svg)][2]
-[![](https://img.shields.io/myget/dittodhole/vpre/Source.JetBrains.Annotations.svg)][1]
+[![](https://img.shields.io/appveyor/ci/dittodhole/dotnet-source-jetbrains-annotations/develop.svg)](https://ci.appveyor.com/project/dittodhole/dotnet-source-jetbrains-annotations/branch/develop)
+[![](https://img.shields.io/myget/dittodhole/vpre/Source.JetBrains.Annotations.svg)](https://www.myget.org/feed/dittodhole/package/nuget/Source.JetBrains.Annotations)
 
 ```powershell
 PM> Install-Package -Id Source.JetBrains.Annotations -pre --source https://www.myget.org/F/dittodhole/api/v2
 ```
 
-### [nuget.org][3]
+### [nuget.org]
 
-[![](https://img.shields.io/appveyor/ci/dittodhole/dotnet-source-jetbrains-annotations/master.svg)][4]
-[![](https://img.shields.io/nuget/v/Source.JetBrains.Annotations.svg)][3]
+[![](https://img.shields.io/appveyor/ci/dittodhole/dotnet-source-jetbrains-annotations/master.svg)](https://ci.appveyor.com/project/dittodhole/dotnet-source-jetbrains-annotations/branch/master)
+[![](https://img.shields.io/nuget/v/Source.JetBrains.Annotations.svg)](https://www.nuget.org/packages/Source.JetBrains.Annotations)
 
 ```powershell
 PM> Install-Package -Id Source.JetBrains.Annotations
@@ -45,9 +45,3 @@ dotnet-Source.JetBrains.Annotations is published under [WTFNMFPLv3](https://gith
 ## Icon
 
 [ReSharper](https://resources.jetbrains.com/storage/products/resharper/img/meta/ReSharper_64.png) by [JetBrains](https://www.jetbrains.com/resharper/).
-
-
-[1]: https://www.myget.org/feed/dittodhole/package/nuget/Source.JetBrains.Annotations
-[2]: https://ci.appveyor.com/project/dittodhole/dotnet-source-jetbrains-annotations/branch/develop
-[3]: https://www.nuget.org/packages/Source.JetBrains.Annotations
-[4]: https://ci.appveyor.com/project/dittodhole/dotnet-source-jetbrains-annotations/branch/master
