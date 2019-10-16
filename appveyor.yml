@@ -20,7 +20,7 @@ deploy:
 - provider: NuGet
   name: MyGet
   server: https://www.myget.org/F/dittodhole/api/v2/package
+  symbol_server: https://www.myget.org/F/dittodhole/symbols/api/v2/package
   api_key:
     secure: c9r6oyxFOqnfj0xezZcLIoopgoBUb5ib9nrTYMkXDTqzvMrrXmprbHgyldag6NZ4
   artifact: nupkg
-  symbol_server: https://www.myget.org/F/dittodhole/symbols/api/v2/package
