@@ -9,16 +9,6 @@ artifacts:
 - path: artifacts/*.nupkg
   name: nupkg
   type: File
-/*
-install:
-- cmd: choco install %root_dir%packages.config -y
-before_build:
-- cmd: gitversion /showvariable NuGetVersionV2 > %version_file%
-- cmd: SET /P version=<%version_file%
-build_script: nuget pack "%nuspec_file%" -properties "Version=%version%;id=%project_name%"
-after_build:
-- cmd: appveyor PushArtifact "%root_dir%\%project_name%.%version%.nupkg"
-*/
 deploy:
 - provider: NuGet
   name: NuGet
