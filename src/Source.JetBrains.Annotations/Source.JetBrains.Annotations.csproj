@@ -4,6 +4,7 @@
     <NoWarn>1701;1702;NU5128</NoWarn>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <EnableDefaultItems>false</EnableDefaultItems>
   </PropertyGroup>
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -32,12 +33,18 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="JetBrains.Annotations.cs">
+    <Compile Include="JetBrains.Annotations.cs">
       <Pack>true</Pack>
-    </None>
+    </Compile>
     <None Include="..\..\assets\ReSharper_64.png">
       <Pack>true</Pack>
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
+  <Target Name="UpdatePackageRepository" AfterTargets="GetVersion">
+    <PropertyGroup>
+      <RepositoryBranch>$(GitVersion_BranchName)</RepositoryBranch>
+      <RepositoryCommit>$(GitVersion_Sha)</RepositoryCommit>
+    </PropertyGroup>
+  </Target>
 </Project>
