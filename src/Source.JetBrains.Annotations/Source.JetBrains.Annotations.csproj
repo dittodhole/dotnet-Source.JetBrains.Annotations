@@ -9,6 +9,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Source.JetBrains.Annotations</PackageId>
     <Authors>dittodhole</Authors>
+    <developmentDependency>true</developmentDependency>
     <Description>ReSharper Annotations help reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantics of APIs in ASP.NET and XAML frameworks and otherwise increase accuracy of ReSharper code inspections.</Description>
     <PackageDescription>C# source implementation of JetBrains.Annotations</PackageDescription>
     <Copyright>JetBrains</Copyright>
