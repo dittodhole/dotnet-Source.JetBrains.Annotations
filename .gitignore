@@ -1,4 +1,4 @@
-artifacts/*.nupkg
+artifacts/
 build/build.ps1
 build/tools/
 src/.vs/

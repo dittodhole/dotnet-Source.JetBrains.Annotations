@@ -2,7 +2,6 @@ var configuration = "Release";
 var artifactsDirectory = Directory("../artifacts");
 var sourceDirectory = Directory("../src");
 var solutionFile = sourceDirectory + File("Source.JetBrains.Annotations.sln");
-var projectFile = sourceDirectory + Directory("Source.JetBrains.Annotations") + File("Source.JetBrains.Annotations.csproj");
 
 Task("Build")
   .IsDependentOn("Clean")
