@@ -25,7 +25,7 @@
     <Content Include="JetBrains.Annotations.cs" />
     <Content Include="..\..\assets\ReSharper_64.png">
       <Link>assets\ReSharper_64.png</Link>
-      <PackagePath>\</PackagePath>
+      <PackagePath></PackagePath>
     </Content>
   </ItemGroup>
   <ItemGroup>
