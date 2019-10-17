@@ -41,9 +41,13 @@
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
-  <Target Name="UpdatePackageRepository" AfterTargets="GetVersion">
+  <Target Name="UpdateRepositoryBranch" BeforeTargets="GenerateNuspec">
     <PropertyGroup>
       <RepositoryBranch>$(GitVersion_BranchName)</RepositoryBranch>
+    </PropertyGroup>
+  </Target>
+  <Target Name="UpdateRepositoryCommit" BeforeTargets="GenerateNuspec">
+    <PropertyGroup>
       <RepositoryCommit>$(GitVersion_Sha)</RepositoryCommit>
     </PropertyGroup>
   </Target>
