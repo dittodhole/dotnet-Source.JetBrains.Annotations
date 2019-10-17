@@ -2,7 +2,6 @@
   <PropertyGroup>
     <TargetFrameworks>net40;net46;netstandard2.0</TargetFrameworks>
     <NoWarn>1701;1702;NU5128</NoWarn>
-    <NoBuild>true</NoBuild>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup>
@@ -23,7 +22,6 @@
     <IncludeBuildOutput>false</IncludeBuildOutput>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="JetBrains.Annotations.cs" />
     <Content Include="JetBrains.Annotations.cs" />
     <Content Include="..\..\assets\ReSharper_64.png">
       <Link>assets\ReSharper_64.png</Link>
