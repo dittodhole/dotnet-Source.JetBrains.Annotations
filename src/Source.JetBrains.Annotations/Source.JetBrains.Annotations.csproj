@@ -3,7 +3,11 @@
     <TargetFrameworks>net40;net46;netstandard2.0</TargetFrameworks>
     <NoWarn>1701;1702;NU5128</NoWarn>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
   </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+  </ItemGroup>
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Source.JetBrains.Annotations</PackageId>
@@ -22,11 +26,13 @@
     <IncludeBuildOutput>false</IncludeBuildOutput>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="JetBrains.Annotations.cs" />
-    <Content Include="..\..\assets\ReSharper_64.png">
-      <Link>assets\ReSharper_64.png</Link>
+    <None Include="JetBrains.Annotations.cs">
+      <Pack>true</Pack>
+    </None>
+    <None Include="..\..\assets\ReSharper_64.png">
+      <Pack>true</Pack>
       <PackagePath></PackagePath>
-    </Content>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="GitVersionTask" Version="5.0.1">
