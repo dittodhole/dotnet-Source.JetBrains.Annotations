@@ -5,7 +5,7 @@ before_build:
 - cmd: cd build
 build_script:
 - cmd: build.bat
-artifacts:  
+artifacts:
 - path: artifacts/*.nupkg
   name: nupkg
   type: File

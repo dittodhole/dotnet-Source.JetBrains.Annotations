@@ -1,6 +1,7 @@
 ![](assets/ReSharper_64.png)
 
 # dotnet-Source.JetBrains.Annotations
+
 > ReSharper Annotations help reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantics of APIs in ASP.NET and XAML frameworks and otherwise increase accuracy of ReSharper code inspections.
 
 This package provides the actual source of [JetBrains.Annotations](https://www.nuget.org/packages/JetBrains.Annotations), as mentiond in https://blog.jetbrains.com/dotnet/2015/08/12/how-to-use-jetbrains-annotations-to-improve-resharper-inspections/ (*Including the source*).
