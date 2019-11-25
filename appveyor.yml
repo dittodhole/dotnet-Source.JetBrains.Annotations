@@ -6,7 +6,7 @@ before_build:
 build_script:
 - cmd: build.bat
 artifacts:
-- path: artifacts/*.nupkg
+- path: artifacts/Source.JetBrains.Annotations.*.nupkg
   name: nupkg
   type: File
 deploy:
