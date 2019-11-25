@@ -39,6 +39,7 @@ dotnet-Source.JetBrains.Annotations/build> build.bat
 
 This will create the following artifacts:
 
+- `artifacts/JetBrains.Annotations.{version}.nupkg`
 - `artifacts/Source.JetBrains.Annotations.{version}.nupkg`
 
 ## License

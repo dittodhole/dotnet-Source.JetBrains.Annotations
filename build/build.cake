@@ -1,4 +1,3 @@
-var configuration = "Release";
 var artifactsDirectory = Directory("../artifacts");
 var sourceDirectory = Directory("../src");
 var solutionFile = sourceDirectory + File("Source.JetBrains.Annotations.sln");
@@ -10,7 +9,14 @@ Task("Build")
   Information($"Building {MakeAbsolute(solutionFile)}");
 
   MSBuild(solutionFile,
-          settings => settings.SetConfiguration(configuration)
+          settings => settings.SetConfiguration("Release")
+                              .SetVerbosity(Verbosity.Minimal)
+                              .WithRestore()
+                              .WithProperty("PackageOutputPath", MakeAbsolute(artifactsDirectory).FullPath));
+
+  MSBuild(solutionFile,
+          settings => settings.SetConfiguration("SourcePackage")
+                              .SetVerbosity(Verbosity.Minimal)
                               .WithRestore()
                               .WithProperty("PackageOutputPath", MakeAbsolute(artifactsDirectory).FullPath));
 });
