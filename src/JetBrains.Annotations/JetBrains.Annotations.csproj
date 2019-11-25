@@ -10,7 +10,6 @@
     <PackageId>JetBrains.Annotations</PackageId>
     <Authors>dittodhole</Authors>
     <Description>ReSharper Annotations help reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantics of APIs in ASP.NET and XAML frameworks and otherwise increase accuracy of ReSharper code inspections.</Description>
-    <PackageDescription>C# source implementation of JetBrains.Annotations</PackageDescription>
     <Copyright>JetBrains</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://www.jetbrains.com/help/resharper/Code_Analysis__Code_Annotations.html</PackageProjectUrl>
@@ -21,8 +20,9 @@
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'SourcePackage'">
-   <PackageId>Source.JetBrains.Annotations</PackageId>
-   <ContribMicrosoftBuildSourcePackage_AdaptPackagId>False</ContribMicrosoftBuildSourcePackage_AdaptPackagId>
+    <PackageId>Source.JetBrains.Annotations</PackageId>
+    <ContribMicrosoftBuildSourcePackage_AdaptPackagId>False</ContribMicrosoftBuildSourcePackage_AdaptPackagId>
+    <PackageDescription>C# source implementation of JetBrains.Annotations</PackageDescription>
   </PropertyGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
     <PackageReference Include="NETStandard.Library" Version="2.0.3" />
