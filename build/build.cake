@@ -1,6 +1,6 @@
 var artifactsDirectory = Directory("../artifacts");
 var sourceDirectory = Directory("../src");
-var solutionFile = sourceDirectory + File("Source.JetBrains.Annotations.sln");
+var solutionFile = sourceDirectory + File("JetBrains.Annotations.sln");
 
 Task("Build")
   .IsDependentOn("Clean")
