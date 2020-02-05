@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net20;net40;net46;netstandard2.0</TargetFrameworks>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
@@ -32,7 +32,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="GitVersionTask" Version="5.0.1">
+    <PackageReference Include="GitVersionTask" Version="5.1.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -44,14 +44,4 @@
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
-  <Target Name="UpdateRepositoryBranch" BeforeTargets="GenerateNuspec">
-    <PropertyGroup>
-      <RepositoryBranch>$(GitVersion_BranchName)</RepositoryBranch>
-    </PropertyGroup>
-  </Target>
-  <Target Name="UpdateRepositoryCommit" BeforeTargets="GenerateNuspec">
-    <PropertyGroup>
-      <RepositoryCommit>$(GitVersion_Sha)</RepositoryCommit>
-    </PropertyGroup>
-  </Target>
 </Project>
